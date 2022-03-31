@@ -1,0 +1,14 @@
+#four tasks with long durations and no domain constraints, but binary constraints that force them to run on different days
+
+task, weld_chassis 8
+task, tweak_axle 7
+task, vulcanise_rubber 8
+task, test_bulletproof_tyres 8
+
+#binary constraints
+constraint, weld_chassis before tweak_axle
+constraint, test_bulletproof_tyres after vulcanise_rubber
+constraint, tweak_axle before vulcanise_rubber
+
+#soft constraints
+domain, test_bulletproof_tyres ends-by thu 4pm 300
