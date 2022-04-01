@@ -1,0 +1,5 @@
+weld_chassis:mon 9am
+tweak_axle:tue 10am
+vulcanise_rubber:wed 9am
+test_bulletproof_tyres:thu 9am
+cost:300
