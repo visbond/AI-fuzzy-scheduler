@@ -18,7 +18,7 @@ To adhere closely to CSP conventions, the program uses some helper files from AI
 
 **Example**
 
-An example input file is below. The program can run much longer and complex files. It can be used to form practical schedules. Ref the task specification for more details.
+An example input file is below. The program can run much longer and complex files. It can be used to form practical schedules. Ref the task specification PDF for more details.
 
 ```
 #four tasks with long durations and no domain constraints, but binary constraints that force them to run on different days
@@ -44,4 +44,34 @@ tweak_axle:tue 9am
 vulcanise_rubber:wed 9am
 test_bulletproof_tyres:thu 9am
 cost:300
+```
+
+Another example with more types of constraints:
+
+```
+#three tasks with three binary constraints, multiple domain constraints for each task, and soft deadlines
+#task order is not alphabetical, for testing.
+task, t1 3
+task, t3 2
+task, t2 4
+
+#three binary constraints
+constraint, t1 before t2
+constraint, t3 starts-at t2
+constraint, t3 after t2
+
+#domain constraint
+domain, t2 ends-after mon 2pm
+domain, t2 starts-before 4pm
+domain, t2 starts-after 10am
+domain, t2 wed
+domain, t1 ends-before 1pm
+domain, t1 starts-after 10am
+domain, t3 starts-in tue 12pm-wed 3pm
+domain, t3 ends-in tue 5pm-wed 5pm
+
+#soft deadlines
+domain, t1 ends-by tue 3pm 40
+```
+domain, t2 ends-by wed 1pm 10
 ```
