@@ -36,8 +36,9 @@ constraint, tweak_axle before vulcanise_rubber
 #soft constraints
 domain, test_bulletproof_tyres ends-by thu 4pm 300
 ```
-```
+
 This would give the result:
+```
 weld_chassis:mon 9am
 tweak_axle:tue 9am
 vulcanise_rubber:wed 9am
