@@ -10,7 +10,7 @@ The main code is in aFuzzyScheduler.py. Two sample input files are also provided
 
 **Usage:**
 
-`python fuzzyScheduler.py inputfile.txt`
+`python aFuzzyScheduler.py inputfile.txt`
 
 The above is a summary, the Specification.PDF has detailed information on the problem.
 
@@ -18,7 +18,7 @@ To adhere closely to CSP conventions, the program uses some helper files from AI
 
 **Example**
 
-An example input file is below. The program can run much longer and complex files. It can be used to form practical schedules.
+An example input file is below. The program can run much longer and complex files. It can be used to form practical schedules. Ref the task specification for more details.
 
 ```
 #four tasks with long durations and no domain constraints, but binary constraints that force them to run on different days
