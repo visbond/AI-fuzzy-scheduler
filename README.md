@@ -1,6 +1,6 @@
 ### Artifical Intelligence: Fuzzy Scheduler
 
-Scheduling is important in many fields, from phone operating systems to megafactories. This program implements a fuzzy scheduler. Unlike a conventional scheduler, a fuzzy scheduler allows some tasks to be delayed, with each hour (or any time unit) of delay incurring a specified cost. Such a fuzzy scheduler is a type of Constraint Satisfaction Problem (CSP). CSPs are an important class of problems in artificial intelligence. 
+Scheduling tasks efficiently is important in many fields, from phone operating systems to megafactories. This program implements a fuzzy scheduler. Unlike a conventional scheduler, a fuzzy scheduler allows some tasks to be delayed, with each hour (or any time unit) of delay incurring a specified cost. Such a fuzzy scheduler is a type of Constraint Satisfaction Problem (CSP). CSPs are an important class of problems in artificial intelligence. 
 
 Since each time-unit of delay incurs a cost, we have to design a schedule with the least cost. This makes it a subclass of CSPs called Constraint Optimization Problems (COP), since we have to optimise based on various constraints to minimise the cost.
 
