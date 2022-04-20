@@ -1,4 +1,10 @@
-#fuzzyScheduler. Ref readme for spec and other details
+# fuzzyScheduler.  Ref readme for spec and other details
+# A Fuzzy scheduler schedules tasks allowing for some delays and their associated costs
+# Total cost has to be minimised. A Constraint Optimization Problem
+
+# This program was written in the early days when I was new to Python. 
+# It does the job and does it efficiently, but is not very object-oriented. 
+# If I wrote it today, a lot of functionality would be encapsulated in class methods.
 
 from sys import argv
 from copy import deepcopy # got side effects when working on a dictionary, so using deep copy
