@@ -12,9 +12,12 @@ The main code is in aFuzzyScheduler.py. Two sample input files are also provided
 
 `python aFuzzyScheduler.py inputfile.txt`
 
+
 The above is a summary, the Specification.PDF has detailed information on the problem.
 
 To adhere closely to CSP conventions, the program uses some helper files from AIPython.org and modifies them to suit our purpose. The main fuzzy scheduler above has been completely built from scratch.
+
+This program was written in the early days when I was new to Python. It does the job and does it efficiently, but is not very object-oriented. If I wrote it today, a lot of functionality would be encapsulated in class methods.
 
 **Example**
 
